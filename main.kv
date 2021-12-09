@@ -1,0 +1,23 @@
+<MainWidget>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    label_1: hello
+    label_2: hello2
+
+    Label:
+        id: hello
+        font_size: 30
+        text: 'ОНЛАЙН ТРЕЙД'
+    Label:
+        id: hello2
+        font_size: 30
+        text: 'Ситилинк'
+    Button:
+        font_size: 30
+        text: 'Обновить'
+        size_hint: (.5, None)
+        pos_hint:{"center_x":0.5, "top":1}
+
+        on_press: root.say_hello()
